@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+    color: #fff;
+    overflow-x: hidden
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background: #111;
+    border-right: 2px solid #444;
+    z-index: 1;
+    width: 120px;
+    height: 1rem;
+}
+
+section {
+    scroll-margin-top: 1rem;
+    min-height: 1rem;
+}
+
+.tab {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.tab:hover {
+    background: #222;
+}
+
+.tab-active {
+    background: #333;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.content {
+    margin-left: 120px;
+    padding: 40px 10px;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .tabs {
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #444;
+        justify-content: space-around;
+        transform: none;
+    }
+
+    .tab {
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid #333;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .tab:last-child {
+        border-right: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    .tab {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}

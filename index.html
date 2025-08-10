@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASRO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="assets/ASRO.PNG" type="image/x-icon">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <div class="container">
+        <div class="tabs">
+            <div class="tab" onclick="scrollToSection(event, 'about')">About</div>
+            <div class="tab" onclick="scrollToSection(event, 'team')">Team</div>
+            <div class="tab" onclick="scrollToSection(event, 'research')">Research</div>
+            <div class="tab" onclick="scrollToSection(event, 'contact')">Contact</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <section id="about" data-aos="fade-up">
+            <h1>About ASRO</h1>
+            <p></p>
+        </section>
+
+        <section id="team" data-aos="fade-up">
+            <h1>Meet the Team</h1>
+            <p></p>
+        </section>
+
+        <section id="research" data-aos="fade-up">
+            <h1>Our Research</h1>
+            <p></p>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <h1>Contact Us</h1>
+            <p></p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
