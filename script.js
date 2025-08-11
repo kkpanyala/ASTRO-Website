@@ -52,3 +52,10 @@ window.addEventListener('resize', () => {
 resizeCanvas();
 createStars();
 animateStars();
+
+document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', e => {
+        const member = button.parentElement;
+        member.classList.toggle('active');
+    });
+});
