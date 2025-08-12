@@ -47,6 +47,7 @@ function animateStars() {
 window.addEventListener('resize', () => {
     resizeCanvas();
     createStars();
+    createShootingStars();
 });
 
 resizeCanvas();
