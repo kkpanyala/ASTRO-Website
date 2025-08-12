@@ -174,8 +174,12 @@ p {
     margin: 1rem 0;
 }
 
+.dropdown-desc ul {
+    margin: 1rem 0;
+}
+
 .member.active .dropdown-desc {
-    max-height: 200px;
+    max-height: 225px;
     padding: 1rem;
 }
 
@@ -187,4 +191,8 @@ p {
 
 .member.active .arrow {
     transform: rotate(180deg);
+}
+
+a {
+    color: #fff;
 }
