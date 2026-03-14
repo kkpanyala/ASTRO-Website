@@ -196,3 +196,36 @@ p {
 a {
     color: #fff;
 }
+
+.launch-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.launch-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.launch-scroll::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.launch-card {
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 15px;
+    scroll-snap-align: start;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.launch-card img {
+    width: 40vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

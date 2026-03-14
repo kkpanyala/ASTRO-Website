@@ -60,3 +60,7 @@ document.querySelectorAll('.dropdown-toggle').forEach(button => {
         member.classList.toggle('active');
     });
 });
+
+document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+});
