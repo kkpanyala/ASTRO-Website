@@ -61,5 +61,7 @@ document.querySelectorAll('.dropdown-toggle').forEach(button => {
 });
 
 document.addEventListener('contextmenu', e => {
-    e.preventDefault();
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
 });
